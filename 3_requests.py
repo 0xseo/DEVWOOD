@@ -1,3 +1,11 @@
+# 파이참에서 모듈 설치
+# 1. File - Settings
+# 2. Python Interpreter
+# 3. 왼쪽 아래 + 버튼
+# 4. 모듈명 검색
+# 5. Install Package
+
+
 import requests
 
 nav = requests.get("http://naver.com")
