@@ -55,7 +55,7 @@
             if($(id).val() == "") {
                 // id의 label 뒤에 warning이라는 class를 추가한다 (warning class의 style 적용)
                 $(id).next('label').addClass('warning');
-                // 시간이 지나면 (아마도 1500ms..?)
+                // 시간이 지나면 (1500ms)
                 setTimeout(function() {
                     // warning class를 제거한다 (warning class의 style 적용 해제)
                     $('label').removeClass('warning');

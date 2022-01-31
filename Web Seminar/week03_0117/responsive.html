@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Web Page!</title>
+    <link rel="reset" href="/css/reset.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h2><a href="#">Saffron</a></h2>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <!-- id:about인 곳으로 이동 -->
+            <li><a href="#about">About</a></li>
+            <!-- id:services인 곳으로 이동 -->
+            <li><a href="#services">Services</a></li>
+            <!-- id:contact인 곳으로 이동 -->
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+
+    <!-- Section1 Banner -->
+    <section class="banner-area">
+        <div class="banner-img"></div>
+        <h1>Flexbox Website</h1>
+        <h3>Responsive Web Design</h3>
+        <a href="#" class="banner-btn">Contact us</a>
+    </section>
+
+    <!-- Section2 About -->
+    <section class="about-area" id="about">
+        <h3 class="section-title">About Us</h3>
+        <ul class="about-content">
+            <li class="about-left"></li>
+            <li class="about-right">
+                <h2>About our Company</h2>
+                <p>What do I have to write? I want to know what he wrote, like "Lorem ipsum dolor sit amet, blahblah" I need more words, can you recommend some? Web designing is very hard.</p>
+                <a href="" class="about-btn">Learn more</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section3 Services -->
+    <section class="services-area" id="services">
+        <h3 class="section-title">Services</h3>
+        <ul class="services-content">
+            <li>
+                <!-- 이모티콘으로 뭘 해보려다 실패한 흔적 div.emoji -->
+                <div class="emoji">
+                    <!-- laptop emoji -->
+                    <i class="fa fa-laptop"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, reprehenderit.</p>
+            </li>
+            <li>
+                <div class="emoji">
+                    <!-- graph emoji -->
+                    <i class="fa fa-signal"></i>
+                </div>
+                <h4>Marketing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, reprehenderit.</p>
+            </li>
+            <li>
+                <div class="emoji">
+                    <!-- picture emoji -->
+                    <i class="fa fa-picture-o"></i>
+                </div>
+                <h4>Graphcs </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, reprehenderit.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section4 Contact -->
+    <section class="contact-area" id="contact">
+        <h3 class="section-title">Contact</h3>
+        <ul class="contact-content">
+            <li>
+                <div class="emoji">
+                    <!-- GPS emoji -->
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <p>247 Westwood Lane <br>Blackfen, UK</p>
+            </li>
+            <li>
+                <div class="emoji">
+                    <!-- phone emoji -->
+                    <i class="fa fa-phone"></i>
+                </div>
+                <p>+123 456 789 <br> +789 345 123</p>
+            </li>
+            <li>
+                <div class="emoji">
+                    <!-- mail emoji -->
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <p>info@saffron.com <br>yourdomain@website.com</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>All Right Reserved by Your Website</p>
+    </footer>
+</body>
+</html>
