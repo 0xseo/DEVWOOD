@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id='one'>hello world</p>
+    <script>
+        // html을 사용해서 'one'이라는 id를 가진 요소 가져오기
+        document.getElementById('one').innerHTML = 'paul<strong>lab</strong>';
+        // 문서에 쓰기
+        document.write('hello world write');
+        // 경고창
+        window.alert('hello world alert');
+        // 개발자 도구 console
+        console.log('hello world console');
+
+        var var1 = 100; // 정수형 변수 선언
+        document.write('연습: ', var1);
+        document.write('<br>');
+        document.write(typeof(var1)); // 자료형 확인_number, string, Boolean, Array, Function
+        // 비교연산자: ==는 값만 확인, ===는 type까지 확인
+
+        // 사용자 정의 함수 선언
+        function f(x, y){
+            var z;
+            z = x + y;
+            return z;
+        }
+        document.write(f(1, 2));
+
+        document.write('<br>');
+
+        // String 내장 함수
+        var txt = 'Hello World!';
+        document.write(txt.length); // length: 문자열 길이
+        document.write(txt.indexOf('World')); // indexOf: 단어의 index
+        document.write(txt.slice(0, 7)); // slice: index 자르기
+        document.write(txt.replace('World', 'world')); // replace: 문자열 대체
+        document.write(txt.toUpperCase()); // toUpperCase: 대문자로
+
+        document.write('<br>');
+
+        // Number 내장 함수
+        var num = 10;
+        document.write(num.toFixed(6)); // toFixed: 유효숫자 6개로 고정
+        document.write(num.toString()); // toString: 문자열로 전환
+        document.write(Math.PI); // 파이
+        document.write(Math.max(1, 2, 30)); // 최댓값
+        document.write(Math.random()); // 0에서 1 사이 랜덤변수
+
+        document.write('<br>');
+
+        // 날짜
+        var date = new Date();
+        document.write(date);
+        document.write(date.getMonth()); // 월_0:1월
+        document.write(date.getDate()); // 일
+        document.write(date.getDay()); // 요일_0:일요일
+        document.write(date.getHours()); // 시간
+
+        document.write('<br>');
+
+        // 배열
+        var l = [10, 20, 30, 40];
+        document.write(l.slice(3)); // 인덱스 3부터
+        document.write(l.pop()); // pop, push
+        document.write(l.join('!!')); // 배열 값 사이 !!로 통일해서 string으로 출력
+        // sort, reverse : 문자열로 취급 후 사전식 정렬
+
+        // 객체
+        var person = {
+            name:{
+                firstname:'yeongseo',
+                lastname:'kim',
+            },
+            age:10,
+            married:false,
+        };
+        document.write(person['name']['lastname']);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">hello world</h1>
+    <button onclick="f()">눌러!!</button>
+    <script>
+        function f(){
+            // id명이 one인 객체 선택 - txt 변경
+            document.getElementById('one').innerHTML = '반갑습니다!!';
+            // id명이 one인 객체 선택 - 스타일 변경
+            document.getElementById('one').style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
